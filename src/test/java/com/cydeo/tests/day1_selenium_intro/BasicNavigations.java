@@ -18,6 +18,9 @@ public class BasicNavigations {
         // place driver line after my ChromeDriver & it will maximize the browser size
         driver.manage().window().maximize();
 
+        // this () below is almost the same to maximize but sometime don't work in windows
+        // driver.manage().window().fullscreen();
+
         //3- Go to "https://www.tesla.com"
         driver.get("https://www.tesla.com");
 
@@ -73,6 +76,12 @@ public class BasicNavigations {
         currentURL = driver.getCurrentUrl();
 
         System.out.println("currentURL = " + currentUrl);
+
+        // To avoid get Google driver on my computer Dock after write ur code add driver.close(); 2 close current window
+        driver.close();
+
+        // this will close all of the opened windows
+        driver.quit();
 
 
 
