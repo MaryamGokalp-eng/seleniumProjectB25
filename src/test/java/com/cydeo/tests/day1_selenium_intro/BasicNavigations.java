@@ -41,7 +41,7 @@ public class BasicNavigations {
         String currentURL = driver.getCurrentUrl();
         System.out.println("currentURL = " + currentURL);
 
-        //Stop code for 3 seconds
+        //Stop code for 3 seconds.
         Thread.sleep(3000);
 
         // use selenium to navigate back

@@ -8,7 +8,7 @@ public class Task1_YahooTitleVerification {
     public static void main(String[] args) {
 
         //TC #1: Yahoo Title Verification
-        //1. Open Chrome browser
+        //1. Open Chrome browser.
         // do setup for browser driver
         WebDriverManager.chromedriver().setup();
 

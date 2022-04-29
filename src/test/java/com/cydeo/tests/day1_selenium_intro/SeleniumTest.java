@@ -10,7 +10,7 @@ public class SeleniumTest {
 
         //1-Setting up the web driver manager once u typing to import type & press enter to import
         // 4 class purpose use chromedriver & web browser line bellow
-        // We create our "Browser Driver"
+        // We create our "Browser Driver".
 
         WebDriverManager.chromedriver().setup();
 
