@@ -10,9 +10,12 @@ public class BasicNavigations {
 
         //1- Set up the "browser driver"
         WebDriverManager.chromedriver().setup();
-
         //2-Create instance of the "Selenium WebDriver" Implementation will appear on the below note
         //The line below it will open my browser
+        //SessionID = 58DSAFASDASDF58, as user we see driver 4 selenium sees is only this 58DSAFASDASDF58 generated number
+        // selenium pass number around until the end when we use driver.quit the mentioned number is deleted
+        // after the number is deleted we cannot continue executed the code on the same browser that is being executed by selenium
+        // code need to be executed on the new browser
         WebDriver driver = new ChromeDriver();
 
         // place driver line after my ChromeDriver & it will maximize the browser size
