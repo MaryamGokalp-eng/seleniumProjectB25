@@ -65,7 +65,9 @@ public class BasicNavigations {
         //System.out.println("driver.getTitle() = " + driver.getTitle());
         System.out.println("currentTitle = " + currentTitle);
 
-        // Get the current URL using Selenium
+        // Get the current URL using Selenium 4 me 2 get 2 different URL Tesla & Google URL
+        currentURL = driver.getCurrentUrl();
+
         System.out.println("currentURL = " + currentUrl);
 
 
