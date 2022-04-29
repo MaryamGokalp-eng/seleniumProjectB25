@@ -23,17 +23,15 @@ public class BasicNavigations {
         // Java run the code top 2 bottom & left 2 right so when it comes to ChromeDrive line it will open an empty browser
         // so every time when u run specific code it generate specific id for that specific run time, it opened a new browser.
 
-        // get the title of the page
+        // get the title of the page & print URL after the titled
         String currentTitle = driver.getTitle();
         System.out.println("currentTitle = " + currentTitle);
 
         String currentUrl = driver.getCurrentUrl();
         System.out.println("currentURL = " + currentUrl);
 
-
         String currentURL = driver.getCurrentUrl();
         System.out.println("currentURL = " + currentURL);
-
 
         //Stop code for 3 seconds
         Thread.sleep(3000);
@@ -67,9 +65,7 @@ public class BasicNavigations {
         //System.out.println("driver.getTitle() = " + driver.getTitle());
         System.out.println("currentTitle = " + currentTitle);
 
-        // Get the current URL using Selenium & print ou to the beauty
-
-
+        // Get the current URL using Selenium
         System.out.println("currentURL = " + currentUrl);
 
 
