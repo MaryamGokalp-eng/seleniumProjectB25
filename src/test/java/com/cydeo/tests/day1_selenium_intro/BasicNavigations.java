@@ -70,6 +70,10 @@ public class BasicNavigations {
 
         System.out.println("currentURL = " + currentUrl);
 
+        //Summary try to get title & URL from 2 different pages  & You can inspect the web page to see the changes
+        // create one string call one method 2 print one value
+
+
 
 
 
