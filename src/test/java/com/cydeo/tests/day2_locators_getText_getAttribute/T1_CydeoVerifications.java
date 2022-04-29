@@ -19,7 +19,7 @@ public class T1_CydeoVerifications {
 
 
         //3. Verify URL contains
-        //Expected: cydeo
+        //Expected: cydeo.
         String expectedURL ="cydeo";
        // to get our actual URL We need to get the driver, then get current URL
         //Next I get to get my equals condition
