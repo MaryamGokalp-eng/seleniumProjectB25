@@ -20,7 +20,7 @@ public class SeleniumTest {
         //3-Test if driver is working as expected, once you run the class it open the Google browser
         // on the computer & go straight to the web now ur programme is all set and ready to go
         // if you see the red message even see failed it is normal its just selenium default line that is print on the console
-        //driver.get("https://www.facebook.com");
+        driver.get("https://www.facebook.com");
 
     }
 }

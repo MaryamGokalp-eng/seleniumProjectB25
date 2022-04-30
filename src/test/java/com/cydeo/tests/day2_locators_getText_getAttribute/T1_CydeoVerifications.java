@@ -48,9 +48,9 @@ public class T1_CydeoVerifications {
           // break 15mins: 10. 10am cst
           //break 15mins: 11.10 EST
 
-         // To do any action on webElement we need to locate webElement 2 work on, then learn some methods
-        // from selenium livraria 1st findElement(), locator methods, so once u decide which action
-        // U need 2 find & apply the method on your located webElement.
+           // To do any action on webElement we need to locate webElement 2 work on, then learn some methods
+           // from selenium livraria 1st findElement(), locator methods, so once u decide which action
+           // U need 2 find & apply the method on your located webElement.
 
 
     }
