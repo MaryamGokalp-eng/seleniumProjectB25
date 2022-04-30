@@ -30,7 +30,7 @@ public class T4_LibraryLoginPage {
         signInButton.click();
 
         //6. Verify: visually “Sorry, Wrong Email or Password”
-        //displayed
+        //displayed.
     }
 
 }
