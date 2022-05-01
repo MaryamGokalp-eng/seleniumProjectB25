@@ -35,8 +35,9 @@ public class T2_LinkTextPractice {
 
         if (actualTitle.equals(expectedTitle)){
             System.out.println("Title verification PASS!");
-        }else{
+        }else {
             System.out.println("Title verification FAILED!!!");
+            // on the above block we getTitle & reassigned to the user
         }
 
         //5- Go back to home page by using the .back();
