@@ -18,21 +18,25 @@ public class T3_getAttribute_cssSelector {
 
         //3- Verify “Log in” button text is as expected:
         //Expected: Log In
-        //WebElement signInButton = driver.findElement(By.className("login-btn"));
-
+      //WebElement signInButton=driver.findElement(By.className("login-btn"));//oldWay.InsteadOfClasName use cssSelector
         //LOCATING THE SAME WEB ELEMENT USING DIFFERENT ATTRIBUTE VALUES.
-        //	                   tagName[attribute='value']
-        //	                   input[class='login-btn']
+        //	REMEMBER                   tagName[attribute='value']
+        //	REMEMBER                   input[class='login-btn']
+        // Above statement CustomGenerator tagName toGive moreWay to locate the webElement
         // LOCATED USING CLASS ATTRIBUTE
         //WebElement signInButton = driver.findElement(By.cssSelector("input[class='login-btn']"));
         // LOCATED USING TYPE ATTRIBUTE
         //WebElement signInButton = driver.findElement(By.cssSelector("input[type='submit']"));
         // LOCATED USING VALUE ATTRIBUTE
-        WebElement signInButton = driver.findElement(By.cssSelector("input[value='Log In']"));
+        //lineBelowDifference is InsteadOfClasName use cssSelector & insteadOf passTestDirect weFollowsThe CSS syntest
+        //B4 Run my code I canPaste This input[class='login-btn'] to see ifLocate on myWeb to see if Can find anything
+        //If is not find on the WebPage inspect finding search Bar is not going to work on selenium
+        //this version we can locate whateverWe want to locate getInput fromWeb &
+      WebElement signInButton = driver.findElement(By.cssSelector("input[value='Log In']"));//cssSelector & CSS syntest
 
         String expectedButtonText = "Log In";
 
-        //Getting the value of the attribute "value"
+        //Getting the name value of the attribute "value"
         String actualButtonText = signInButton.getAttribute("value");
 
         System.out.println("actualButtonText = " + actualButtonText);
