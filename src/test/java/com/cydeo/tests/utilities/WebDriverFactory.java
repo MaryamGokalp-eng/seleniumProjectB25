@@ -16,19 +16,23 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverFactory {
 
-    public static WebDriver getDriver(String browserType){
+    //static method IDon't need clas object we say methodName WebDriver returnType getDriver pass BrowserType String
+    public static WebDriver getDriver(String browserType) {
 
-        if (browserType.equalsIgnoreCase("chrome")){
+        //If the String is Chrome I must set up and open ChromeBrowser below is how U setUp WebBrowser
+        // Plus use equalsIgnoreCase coz accepts all the matching keywords
+        if (browserType.equalsIgnoreCase("chrome")) {//
 
-            WebDriverManager.chromedriver().setup();
-            return new ChromeDriver();
+            WebDriverManager.chromedriver().setup(); // do Chrome browser Setup
+            return new ChromeDriver();//Just pass return a Chrome driver
 
-        }else if (browserType.equalsIgnoreCase("firefox")){
+        } else if (browserType.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
-        }else{
+        } else {
+            //U can give 1 more supporting argument inside the statement below
             System.out.println("Given browser type does not exist/or is not currently supported");
-            System.out.println("Driver = null");
+            System.out.println("Driver = null");// means variable does not refer to any object or array
             return null;
         }
 
