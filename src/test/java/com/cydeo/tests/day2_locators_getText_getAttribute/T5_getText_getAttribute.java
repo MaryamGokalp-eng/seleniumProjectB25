@@ -11,7 +11,7 @@ public class T5_getText_getAttribute {
     public static void main(String[] args) {
 
         //TC #5: getText() and getAttribute() method practice
-        //1- Open a Chrome browser
+        //1- Open a Chrome browser.
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
