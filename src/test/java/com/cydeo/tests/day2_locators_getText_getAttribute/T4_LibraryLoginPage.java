@@ -28,6 +28,8 @@ public class T4_LibraryLoginPage {
 
         //4. Enter password: “incorrect password”
         //Use "inputPassword" for the password
+        //Locate input if u see the label, go straight 2 input box, find ID & copy paste after (By.id("inputPassword"))
+        //To do the negative test adding the passwordInput.sendKeys("incorrect password");
         WebElement passwordInput = driver.findElement(By.id("inputPassword"));
         passwordInput.sendKeys("incorrect password");
 
