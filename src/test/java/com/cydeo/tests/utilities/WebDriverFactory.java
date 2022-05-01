@@ -1,4 +1,4 @@
-package com.cydeo.tests.day2_locators_getText_getAttribute;
+package com.cydeo.tests.utilities;
 
 // TASK: NEW METHOD CREATION
 // Method name : getDriver
