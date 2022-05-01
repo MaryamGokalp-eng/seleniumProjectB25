@@ -43,8 +43,8 @@ public class T5_getText_getAttribute {
         //5- Verify placeholder attribute’s value is as expected:
         // Expected: first name from our GoogleWebPage Registration form 2 verify placeholder attribute value below
         //GetPlaceHolder store insideNewString
-        String expectedPlaceHolder = "first name"; //
-        String actualPlaceHolder = firstNameInput.getAttribute("placeholder");//Get Attribute Value
+        String expectedPlaceHolder = "first name";
+        String actualPlaceHolder = firstNameInput.getAttribute("placeholder");//Get the Attribute Value
 
         if (actualPlaceHolder.equals(expectedPlaceHolder)){//Do verification & Print
             System.out.println("Placeholder text verification PASSED!");
