@@ -30,7 +30,7 @@ public class T1_locators_getText {
         //4- Enter incorrect password: “incorrect”
         //To auto generate local variable, once U get "USER_PASSWORD" from our Chrome WebPage, I want 2 use my name
         //once U get userPassword U can say river.findElement get the name & pass USER_PASSWORD 2 create variableBelow
-        //When U use ShortCut will automaticGenerate WebElement & guess WhateverLine & type of variable U try 2 return
+        //When U use ShortCut will automaticGenerate WebElement & guess WhateverLine & type of variable U try 2 return.
         //Mac: option + enter
         //Windows: alt + enter
         WebElement inputPassword= driver.findElement(By.name("USER_PASSWORD"));
