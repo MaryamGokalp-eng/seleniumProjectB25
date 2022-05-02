@@ -8,7 +8,7 @@ public class TC3_BackandForthNavigation {
 
     public static void main(String[] args) {
         //TC #3: Back and forth navigation
-        //1- Open a chrome browser
+        //1- Open a chrome browser.
         WebDriverManager.chromedriver().setup(); // I am setting up my ChromeDriver
         WebDriver driver = new ChromeDriver(); //This line opens an empty Chrome webPage
 
