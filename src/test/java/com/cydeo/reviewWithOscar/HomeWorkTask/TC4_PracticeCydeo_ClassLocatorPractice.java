@@ -26,13 +26,13 @@ public class TC4_PracticeCydeo_ClassLocatorPractice {
         //Below We located this WebElement--->driver.findElement(By.linkText("By.linkText(HomeLinkClassNameLocator" ));
         //We stored inside this webElement Type come from selenium HomeLinkClassNameLocator (storeInsideItOwnContainer)
         //short and clean code below
-        WebElement HomeLinkClassNameLocator = driver.findElement(By.linkText("By.linkText(HomeLinkClassNameLocator"));
-        HomeLinkClassNameLocator.click();
+        WebElement HomeLinkClassNameLocatorLink = driver.findElement(By.linkText("By.linkText(HomeLinkClassNameLocator"));
+        HomeLinkClassNameLocatorLink.click();
 
         //4- Verify title is as expected:
         //Expected: Practice
         //Next create two string
-        String expectedTitle = "HomeLinkClassNameLocator";
+        String expectedTitle = "Practice"; // NAO SEI DESTE CODIGO
         String actualTitle = driver.getTitle();// we have getTitle() method in Selenium WebDriver library
 
         if (expectedTitle.equalsIgnoreCase(actualTitle)) {
@@ -42,7 +42,6 @@ public class TC4_PracticeCydeo_ClassLocatorPractice {
             System.out.println("actualTitle = " + actualTitle);
 
         }
-
     }
 }
 
