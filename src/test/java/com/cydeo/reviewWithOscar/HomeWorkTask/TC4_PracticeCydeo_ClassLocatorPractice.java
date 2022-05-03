@@ -15,32 +15,24 @@ public class TC4_PracticeCydeo_ClassLocatorPractice {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
-
         //2- Go to: https://practice.cydeo.com/inputs
         //driver.navigate().to("https://practice.cydeo.com/inputs"),ifTheLink cannotFind theRest ofTheCode won't execute
         driver.get(" https://practice.cydeo.com/inputs");
 
         //3- Click to “Home” link
         //PS:Locate “Home” link using “className” locator
-        //driver.findElement(By.linkText(HomeLinkClassNameLocator )).click();
-        //Below We located this WebElement--->driver.findElement(By.linkText("By.linkText(HomeLinkClassNameLocator" ));
-        //We stored inside this webElement Type come from selenium HomeLinkClassNameLocator (storeInsideItOwnContainer)
-        //short and clean code below
-        WebElement HomeLinkClassNameLocatorLink = driver.findElement(By.linkText("By.linkText(HomeLinkClassNameLocator"));
-        HomeLinkClassNameLocatorLink.click();
+        WebElement homeLink = driver.findElement(By.className("nav-link"));
+        homeLink.click();
 
         //4- Verify title is as expected:
         //Expected: Practice
-        //Next create two string
-        String expectedTitle = "Practice"; // NAO SEI DESTE CODIGO
-        String actualTitle = driver.getTitle();// we have getTitle() method in Selenium WebDriver library
+        String expectedTitle = "Practice";
+        String actualTitle = driver.getTitle();
 
-        if (expectedTitle.equalsIgnoreCase(actualTitle)) {
-            System.out.println("titled: passed");
+        if (expectedTitle.equals(actualTitle)){
+            System.out.println("Titled is as expected: Verification Passed");
         } else {
-            System.out.println("titled: Fail");
-            System.out.println("actualTitle = " + actualTitle);
-
+            System.out.println("Titled is NOT as expected: Verification Failed");
         }
     }
 }
