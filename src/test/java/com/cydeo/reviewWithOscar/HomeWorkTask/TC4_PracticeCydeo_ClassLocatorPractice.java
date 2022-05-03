@@ -21,6 +21,7 @@ public class TC4_PracticeCydeo_ClassLocatorPractice {
 
         //3- Click to “Home” link
         //PS:Locate “Home” link using “className” locator
+        //When I go to my chrome webpage controlled by automated test software
         WebElement homeLink = driver.findElement(By.className("nav-link"));
         homeLink.click();
 
