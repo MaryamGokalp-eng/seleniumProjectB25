@@ -36,7 +36,7 @@ public class TC3_BackandForthNavigation {
         //6- Verify title equals:
         //  Expected: Google
 
-        String expectedTitle2 = "Practice";
+        String expectedTitle2 = "Google";
         actualTitle = driver.getTitle();
 
         if (actualTitle.equals(expectedTitle2)) {
