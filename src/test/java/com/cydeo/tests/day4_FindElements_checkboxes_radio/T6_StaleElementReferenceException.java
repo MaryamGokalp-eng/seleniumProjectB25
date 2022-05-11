@@ -24,9 +24,11 @@ public class T6_StaleElementReferenceException {
         //3- Locate “CYDEO” link, verify it is displayed.
         WebElement cydeoLink = driver.findElement(By.xpath("//a[text()='CYDEO']"));
 
-        System.out.println("cydeoLink.isDisplayed() = " + cydeoLink.isDisplayed());
+        //We are refreshing the web element reference by re-assigning (re-locating) the web element
+        System.out.println("cydeoLink.isDisplayed() = " + cydeoLink.isDisplayed()); //veryFyIfLinkDisplayed
 
         //4- Refresh the page.
+        //Refresh page say---> driver.navigate().refresh();
         driver.navigate().refresh();
 
         //We are refreshing the web element reference by re-assigning (re-locating) the web element
