@@ -23,7 +23,7 @@ public class T2_RadioButton {
         //Then YouCan JustClick-->hockeyRadioBtn.click();
         WebElement hockeyRadioBtn = driver.findElement(By.xpath("//input[@id='hockey']"));
 
-        Thread.sleep(2000); //optional
+        Thread.sleep(2000); //optional,ToAvoid breakdownTheSystem UCanUseIfUHaveSoMany pagesLoading atTheSameTime
         hockeyRadioBtn.click();
 
         //4. Verify “Hockey” radio button is selected after clicking.
