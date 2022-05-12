@@ -25,9 +25,12 @@ public class T1_StaleElementRefEx {
 
         //3. Click to “Add Element” button
         //button[@onclick='addElement()']
-        //GoalIsToLocateTheWebElementClickOnAddElement+Inspect LocateTheWebElementThatReturnsMe
+        //GoalIsToLocateTheWebElementClickOnAddElement+InspectTo LocateTheWebElementThatReturnsMe
+        //UseXPart e um Button & returns meTheWebElement-->AddElement of the GivenText below so my Txt Extend to
+        //thenAdd-->button & MyText or xpath stands for text =2AddElement-->By.xpath("//button[.='Add Element']"));
         WebElement addElementBtn = driver.findElement(By.xpath("//button[.='Add Element']"));
 
+        //Don'tNeedToAddThread.sleep <--OnlyAddToSeeSleepFor2Seconds
         Thread.sleep(2000);
         addElementBtn.click();
 
