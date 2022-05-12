@@ -19,18 +19,22 @@ public class T2_RadioButton {
         driver.get("https://practice.cydeo.com/radio_buttons");
 
         //3. Click to “Hockey” radio button
+        //Locate&ClickOn LabelInputTag-->Hockey UseTheInputId hockey-->("//input[@id='hockey']"));
+        //Then YouCan JustClick-->hockeyRadioBtn.click();
         WebElement hockeyRadioBtn = driver.findElement(By.xpath("//input[@id='hockey']"));
 
         Thread.sleep(2000);
         hockeyRadioBtn.click();
 
         //4. Verify “Hockey” radio button is selected after clicking.
-        if (hockeyRadioBtn.isSelected()){
+        //System.out.println("hockeyRadioBtn.isSelected() = " + hockeyRadioBtn.isSelected());<--ApplyFinalPractice
+        //Now WeAreGoingToUse IfCondition statement below
+        if (hockeyRadioBtn.isSelected()){  //<--My If Condition
 
-            System.out.println("Button is selected. Verification PASSED!");
+            System.out.println("Button is selected. Verification PASSED!"); //<--TheUCanPrintOut IfButtonSelectedPassed
 
         }else{
-            System.out.println("Button is not selected. Verification FAILED!!!");
+            System.out.println("Button is not selected. Verification FAILED!!!"); //<--ElseNotSelectedVerificationFailed
         }
     }
 }
