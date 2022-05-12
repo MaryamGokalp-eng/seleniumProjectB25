@@ -20,29 +20,37 @@ public class T3_RadioButton_cont {
         //2. Go to https://practice.cydeo.com/radio_buttons
         driver.get("https://practice.cydeo.com/radio_buttons");
 
-
         //NameAttributeIsSportTheCodeItWasWriteInSuchWayThat theyAreConnectedWithEachOtherByUseTheSameName-->Sport
         //GroupIsDefineByName&AttributeValue IndividualValueIsDefinedBy-->Id value for eachExample
         //TheWayTheClassIsCreatedIsToLocate allTheGroup intoOneBigGroup toHaveAName and attributeValue
         //IsBetterToUse-->setupMethod(){ <--ToSet TheGroup Together to return Multiple results
-        //Locate name='sports' radio buttons and store them in a List of Web Element below
         //DriverGoFindAllTheListIfBoxes & StoreInsideTheElement Sports & LookThroughThe ListOfElementsIn line44
-        List<WebElement> sportRadioButtons = driver.findElements(By.name("sport"));
+        //Locate name='sports' radio buttons and store them in a List of Web Element below
+        //INeed toPass 3 Argument-->driver, 2rd nameAttribute-->"sport", andThird IPass--> "hockey"
+        //WhenIRunMyCode ItShouldClickTo--hockey verify printout then Chick to-->Football verify&PrintOut thenGoTo-->Color
 
         clickAndVerifyRadioButton(driver, "sport", "hockey" );
 
         clickAndVerifyRadioButton(driver, "sport", "football");
 
         clickAndVerifyRadioButton(driver, "color", "yellow");
-
     }
+
+    //IShouldMakeTheCode UniversalLogicRegardlessWhichGroupBoxes I shouldJustPasse TheNameAttributeValueOnWeb-->Color
+    // to Pass As Argument To Store All In One Box & Put Then Together Also To Use For Other Radio & Input as well
+    //FirstPass(WebDriver driver, String nameAttribute, String idValue), IcaGroupThemTogether&ICanVerifyByCallingThe()
+    //To Generalised I Can Find The Info Box & Click In One Of Them I Can Say--> String idValue
+    //To Generate The List Attribute I Need To Make Dynamic To Pass Outside method So What Ever I pass AsAString...
+    // IShouldLAddInsideMy()-->(nameAttribute));, ThenDirectMyDriverToStateWhichGroupShouldBeLocated onTheWeb
+    //instore MyId & I can Get From The Outside The() SoWhenI passInside the() passToMy EachId & ICanClickToIt
+
 
     private static void clickAndVerifyRadioButton(WebDriver driver, String nameAttribute, String idValue) {
         List<WebElement> radioButtons = driver.findElements(By.name(nameAttribute));
 
         //Loop through the List of WebElement and select matching result "hockey"
-        for (WebElement each : radioButtons) { //Add sport--->radioButtons &then Each WebElement each
-            String eachId = each.getAttribute("id"); //<--Use each.getAttribute("id");toUtilizeTheIdValue&StoreEachID
+        for (WebElement each : radioButtons) { //InsteadOfSportRadioButtonsChange2RadioButtons
+            String eachId = each.getAttribute(idValue); //<--Use each.getAttribute(idValue);toUtilizeTheOutside()
 
             if (eachId.equals(idValue)) {  //<--NowCreateMyIfCondition & Click TryToClick, Basketball,Football,Hockey
                 each.click(); //Apply TheBreak OnceYouClick OtherwiseTheLoop WillContinue print
@@ -54,4 +62,3 @@ public class T3_RadioButton_cont {
     }
 
 }
-        //WhenU printOutIsGoingToPrintEveryThings so its lookThrough,Then ICreate1IfCondition
