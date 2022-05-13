@@ -12,7 +12,6 @@ public class ManageWebDriverWithoutBonieGarcia {
         Then give the path to Java System settings
          */
         System.setProperty("webdriver.chrome.driver","C:/Users/Oscar/Desktop/chromedriver.exe");
-
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.demoblaze.com/index.html");
