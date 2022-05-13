@@ -44,7 +44,6 @@ public class T3_RadioButton_cont {
     // IShouldLAddInsideMy()-->(nameAttribute));, ThenDirectMyDriverToStateWhichGroupShouldBeLocated onTheWeb
     //instore MyId & I can Get From The Outside The() SoWhenI passInside the() passToMy EachId & ICanClickToIt
 
-
     private static void clickAndVerifyRadioButton(WebDriver driver, String nameAttribute, String idValue) {
         List<WebElement> radioButtons = driver.findElements(By.name(nameAttribute));
 
