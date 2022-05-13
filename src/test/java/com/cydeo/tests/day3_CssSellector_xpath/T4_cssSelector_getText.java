@@ -10,7 +10,7 @@ public class T4_cssSelector_getText {
     public static void main(String[] args) {
         //TC #4: NextBaseCRM, locators, getText(), getAttribute() practice
         //1- Open a Chrome browser
-        WebDriver driver = WebDriverFactory.getDriver("chrome");
+        WebDriver driver = WebDriverFactory.getDriver( "chrome");
 
         driver.manage().window().maximize();
         //2- Go to: https://login1.nextbasecrm.com/?forgot_password=yes
