@@ -1,4 +1,4 @@
-package com.cydeo.reviewWithOscar.HomeWorkTask;
+package com.cydeo.tests.HomeWorkTask;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
