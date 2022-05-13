@@ -1,22 +1,49 @@
 package com.cydeo.tests.day5_testing_Intro_dropdowns;
 
+import com.cydeo.tests.utilities.WebDriverFactory;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
+
 public class TestNG_Selenium {
-    public static void main(String[] args) {
 
-      //TC #6: Selecting date on dropdown and verifying
-      //1. Open Chrome browser
+    WebDriver driver;
 
+    @BeforeMethod
+    public void setupMethod(){
+        //Do browser driver setup
+        //Open browser
+        driver = WebDriverFactory.getDriver("chrome");
 
-       //2. Go to https://practice.cydeo.com/dropdown
+        //Maximize the page
+        driver.manage().window().maximize();
 
-
-        //3. Select “December 1st, 1923” and verify it is selected.
-        //Select year using  : visible text
-        //Select month using   : value attribute
-        //Select day using : index number
-
-
-
-
+        //Implicit wait
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
+
+    @AfterMethod
+    public void tearDownMethod(){
+        driver.close();
+    }
+
+    @Test
+    public void selenium_test(){
+
+        //Get "https://google.com"
+        driver.get("https://google.com");
+
+        //Assert: title is  "Google"
+
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Google";
+
+        Assert.assertEquals(actualTitle,expectedTitle, "Title is not matching here." );
+        //BREAK UNTIL 3.09PM CST
+    }
+
 }
