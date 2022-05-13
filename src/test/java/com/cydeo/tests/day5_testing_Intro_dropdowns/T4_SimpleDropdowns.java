@@ -30,17 +30,24 @@ public class T4_SimpleDropdowns {
     public void simpleDropdownTest(){
 
         //3. Verify “Simple dropdown” default selected value is correct
-        Select simpleDropdown = new Select(driver.findElement(By.xpath("//select[@id='dropdown']")));
+        //OnceSelectUNeedToPassTheArgumentOneMy ()BELOW-->(driver.findElement(By.xpath("//select[@id='dropdown']")));
+       Select simpleDropdown = new Select(driver.findElement(By.xpath("//select[@id='dropdown']")));//SelectFromSelenium
 
+        //WeCanSaySimpleDropdownTextStoreInsideWebElement textBelow, its returns me what is current selected
+        //NextINeedToGetText inLine40 OutOfThis-->CurrentlySelectedOption<--FromMyWebElement inLine38
         WebElement currentlySelectedOption = simpleDropdown.getFirstSelectedOption();
 
-        String actualSimpleDropdownText = currentlySelectedOption.getText();
+       String actualSimpleDropdownText = currentlySelectedOption.getText();
+
+        //InsteadOfIfConditionGenerateAnotherString and IGetTheValue fromMyWebElement-->"Please select an option"
         String expectedSimpleDropdownText = "Please select an option";
 
         //Expected: “Please select an option”
-        Assert.assertEquals(actualSimpleDropdownText, expectedSimpleDropdownText);
+        //WhatTheAssertDo ItWill compare the FirstToStringAbove &CompareWithEachOther
+        Assert.assertEquals(actualSimpleDropdownText, expectedSimpleDropdownText); //<--AssertWhatEverYouLikeUCanTypeIt
 
         //4. Verify “State selection” default selected value is correct
+        //WriteUrLineBelow SelectFromMyWebDriver-->"//select[@id='state']")));
         Select stateDropdown = new Select(driver.findElement(By.xpath("//select[@id='state']")));
 
         //Expected: “Select a State”
