@@ -1,6 +1,6 @@
 package com.cydeo.tests.day5_testing_Intro_dropdowns;
 
-import com.cydeo.reviewWithOscar.week2.WebDriverFactory;
+import com.cydeo.tests.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import java.util.concurrent.TimeUnit;
 public class T4_SimpleDropdowns {
 
