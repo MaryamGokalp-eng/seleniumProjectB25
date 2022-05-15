@@ -53,7 +53,9 @@ public class DropdownPractices {
 
     @Test
     public void dropdown_task6(){
-        //Select “December 1 , 1923” and verify it is selected.
+      //Select “December 1 , 1923” & verify it is selected.ThisCase(ByGetThEText&VerifyIfIsMatchingToTheExpectedResult)
+        //VerifyIsSelectedByGettingTheTextOfIt & verifyIfTheTextIsCorrect
+        //IfWasAnInputTheOnlyWayToVerifyIfItWasSelected
         //SelectYearDropdownToLocateTheYear-->findElement(By.xpath&pass//
         //DoTheSameToTheMonth&Year
         Select yearDropdown = new Select(driver.findElement(By.xpath("//select[@id='year']"))); //LocateTheYear
@@ -80,15 +82,17 @@ public class DropdownPractices {
         String actualDay = dayDropdown.getFirstSelectedOption().getText();
 
         //create assertions
-        Assert.assertTrue(actualYear.equals(expectedYear));
-        Assert.assertEquals(actualMonth, expectedMonth);
-        Assert.assertEquals(actualDay, expectedDay);
+        //StarWith->Assert.assertTrue thenPassOurCondition->(actualYear.equals(expectedYear));
+        Assert.assertTrue(actualYear.equals(expectedYear));  //<--ApplySomethingReturnUsABooleanValue
+        Assert.assertEquals(actualMonth, expectedMonth); //<--Equals,Actual&ExpectedMonth
+        Assert.assertEquals(actualDay, expectedDay); //<--HereUSay-->Equals(actualDay, expectedDay
 
     }
-
     @AfterMethod
-    public void teardownMethod(){
+    public void teardownMethod(){ //BelowWeCreteAnAfter()&WeCanSayDriverClose
+
         driver.close();
+
     }
 
 }
