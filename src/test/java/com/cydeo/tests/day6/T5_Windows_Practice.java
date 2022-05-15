@@ -46,18 +46,27 @@ public class T5_Windows_Practice {
         //ToGetTheExpectedResult
         Assert.assertEquals(actualTitle, expectedTitle);
 
-        System.out.println("Title before click: " + actualTitle);
+        System.out.println("Title before click: " + actualTitle); //FromHereToWindowTestIInsertedCurrentTitleAsExpected
 
         //5. Click to: “Click Here” link
+        //ThenWeClickToTheLinkOnMyWebThenANewWindowOpen. ThenSwitchSeleniumFocusFromTheLeftToTheRight
+        //SoWeCanGetTheTittleFromTheNewWindow. ToBeAbleToSwitchINeedToGet--->driver.switchTo().window(each); &Line66
         WebElement clickHereLink = driver.findElement(By.linkText("Click Here"));
 
         //ClickToTheLink & RunTheCode
         clickHereLink.click();
 
         //6. Switch to new Window.
+        //ThenForUsToGetTheWindowHandle()INeedToUse-->getWindowHandles(); below!
+        //nceUUseWindowHandleYouGetSetOfString Below
+
         Set<String> allWindowHandles = driver.getWindowHandles();
-        // window handle 1 - main window
-        // window handle 2 - 2nd window
+
+        // window handle 1 - main window -->(SeleniumMainWindow)
+        // window handle 2 - 2nd window  -->(ThenMySeleniumLookFrTheSecondWindow)
+        //This()-->for(String each: allWindowHandles){ returns the setOfString &MopThrough
+        //AfterIPrintOutMyTitleIsGoingToSayNewWindow
+        //UseLookGetThroughTheCode&ReturnBackToUs
 
         for(String each: allWindowHandles){
 
@@ -65,11 +74,11 @@ public class T5_Windows_Practice {
             System.out.println("Current title while switching windows: " + driver.getTitle());
 
         }
-
         //7. Assert: Title is “New Window”
         String expectedTitleAfterClick = "New Window";
         actualTitle = driver.getTitle();
 
+        //BelowWeCan-->Assert2String(actualTitle,expectedTitleAfterClick
         Assert.assertEquals(actualTitle, expectedTitleAfterClick);
 
         //PrintNotToChangeTheValue
