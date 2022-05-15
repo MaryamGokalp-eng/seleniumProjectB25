@@ -26,35 +26,42 @@ public class T4_IframePractice {
         driver.get("https://practice.cydeo.com/iframe");
     }
 
-    //@Ignore
+    //@Ignore //ToSkipTheTest
     @Test
     public void iframe_test(){
 
         //We need to switch driver's focus to iframe
         //option #1- switching to iframe using id attribute value
-        //WeCanSay-->driver.switchTo().frame("mce_0_ifr");
+        //UsingThisLineBellow are sameUCanUseOneOfThem
+        // driver.switchTo().frame("mce_0_ifr");
+        //driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='mce_0_ifr']")));
 
         //option #2- passing index number of iframe
         //driver.switchTo().frame(0);
 
         //option #3- locate as web element and pass in frame() method
+        //Below-->switchTo().frame
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='mce_0_ifr']")));
 
         //Locate the p tag
         //OnceIRunMyCodeBelowIfItCanNotFindTheWebElement ItCanThroughElementOutOfException
         //IfDon'tShowElementOutOfExceptionImmediateIsGoingToFindTheParagraph&Trigger-->ImplicitWait
         //WaitFor10secondIfPageNotLoading,thenAfter10secondsThroughElementOutOfException
+        //LocateParagraphTag-->("//p"));
         WebElement yourContentGoesHereText = driver.findElement(By.xpath("//p"));
 
-        Assert.assertTrue(yourContentGoesHereText.isDisplayed());
+        Assert.assertTrue(yourContentGoesHereText.isDisplayed()); //<--AssertIsDisplayed
 
         //Verify "An iFrame containing the TinyMCE WYSIWYG Editor"
         //To be able to verify the header, we must switch back to "main HTML"
+        //SwitchBackToTheParentFrame
         driver.switchTo().parentFrame();
 
+        //LocateHeaderTag
         WebElement headerText = driver.findElement(By.xpath("//h3"));
 
         //assertion of header text is displayed or not
+        //VerifyIfIsDisplayed
         Assert.assertTrue(headerText.isDisplayed());
 
     }
