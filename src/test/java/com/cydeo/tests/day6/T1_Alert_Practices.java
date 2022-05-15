@@ -35,6 +35,7 @@ public class T1_Alert_Practices {
         Thread.sleep(1000);
 
         //To be able to click to Alert OK button we need to switch driver's focus to Alert itself.
+        //WhenTypeAlertChooseTheOneStartFromSeleniumTheUCanSay-->Alert alert = driver.switchTo().alert();
         Alert alert = driver.switchTo().alert();
 
         //4. Click to OK button from the alert
@@ -44,8 +45,10 @@ public class T1_Alert_Practices {
         WebElement resultText = driver.findElement(By.xpath("//p[@id='result']"));
 
         //Failure message will only be displayed if assertion fails: "Result text is NOT displayed."
+        //DisplayThisMessageOnlyIfThereIsAnyFailures-->"Result text is NOT displayed.");
         Assert.assertTrue(resultText.isDisplayed(), "Result text is NOT displayed.");
 
+        //AnotherVerificationBelow
         String expectedText = "You successfully clicked an alert";
         String actualText = resultText.getText();
 
