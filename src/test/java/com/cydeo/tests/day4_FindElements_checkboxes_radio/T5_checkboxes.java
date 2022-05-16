@@ -32,7 +32,7 @@ public class T5_checkboxes {
         Thread.sleep(2000);
         checkbox1.click();
 
-        //5. Click checkbox #2 to deselect it.
+        //5. Click checkbox #2 to select it.
         Thread.sleep(2000);
         checkbox2.click();
 
