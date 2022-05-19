@@ -12,7 +12,8 @@ import java.util.Set;
 public class BrowserUtils {
 
     /*
-    This method will accept int (in seconds) and execute Thread.sleep
+    //AlwaysExplainWhatThe()isDoing whenEverUCreateAClass
+    This method below will accept int (in seconds) and execute Thread.sleep
     for given duration
      */
     public static void sleep(int second){
