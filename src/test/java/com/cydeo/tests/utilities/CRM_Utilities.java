@@ -8,6 +8,7 @@ public class CRM_Utilities {
 
 
     /*
+    WhenCreate a method consider created an overloaded version of it
     This method will log in with helpdesk1@cybertekschool.com
      user when it is called
      */
@@ -44,8 +45,5 @@ public class CRM_Utilities {
         WebElement loginButton = driver.findElement(By.xpath("//input[@value='Log In']"));
         loginButton.click();
     }
-
-
-
 
 }
