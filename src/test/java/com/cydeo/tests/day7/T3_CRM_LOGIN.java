@@ -78,7 +78,7 @@ public class T3_CRM_LOGIN {
 
         //6. Verify title is as expected:
         //Expected: Portal
-        //BrowserUtils.sleep(2);
+        //BrowserUtils.sleep(2); <--IfYourTestisNotPassing wait a few second use
         BrowserUtils.verifyTitle(driver, "(2) Portal");
 
     }
