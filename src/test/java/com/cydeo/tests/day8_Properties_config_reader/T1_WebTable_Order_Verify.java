@@ -29,6 +29,8 @@ public void setupMethod() {
     public void order_name_verify_test(){
 
         //Locate the cell that has Bob Martin text in it.
+    //WeSayGettable->//table[@id=. GetCellContain-->'ctl00_MainContent_orderGrid'].NameBoMartin-->//td[->Bob Martin']"));
+
         WebElement bobMartinCell =
                 driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']//td[.='Bob Martin']"));
 
@@ -36,6 +38,10 @@ public void setupMethod() {
 
         //2. Verify Bob’s name is listed as expected.
         //Expected: “Bob Martin”
+        //ThenStoreInsideString-->String expectedBobName = "Bob Martin";
+        //ThenGetActualFromOurBrowser-->String actualBobName = bobMartinCell.getText();
+        //WeDoOurAccession-->Assert.assertEquals(actualBobName, expectedBobName);
+
         String expectedBobName = "Bob Martin";
         String actualBobName = bobMartinCell.getText();
 
@@ -45,8 +51,10 @@ public void setupMethod() {
         //Expected: 12/31/2021
 
         // alternative locator to bobMartinDateCell = "//td[.='Bob Martin']/../td[5]"
+        //IfThe cell contain itFixLocateThe Cell and after that go to it sibling-->/following-sibling::td[3]"
+
         WebElement bobMartinDateCell =
-                driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']//td[.='Bob Martin']/following-sibling::td[3]"));
+ driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']//td[.='Bob Martin']/following-sibling::td[3]"));
 
         String expectedBobDate = "12/31/2021";
         String actualBobDate = bobMartinDateCell.getText();
