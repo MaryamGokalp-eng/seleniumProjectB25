@@ -15,6 +15,11 @@ public class WebTableUtils {
     //This method should accept a costumerName and return the costumer order date
     //as a String.
 
+    // Locator&IControlFromMy method from theOutsideWhatWeDidWas The()belowICreateADynamicWeDivideOur LocatorIntoGroup&
+    // WePutOurOwnString Custom()->String locator="//td[.='"+customerName+"']/following-sibling::td[3]";
+    //FromThe()ArgumentIntoStringLocator--> String locator = "//td[.='"+customerName+"']/following-sibling::td[3]";
+    //LocateWebElementIntoCustomerDateCell-->  WebElement customerDateCell = driver.findElement(By.xpath(locator));
+
     public static String returnOrderDate(WebDriver driver, String customerName){
         String locator = "//td[.='"+customerName+"']/following-sibling::td[3]";
         WebElement customerDateCell = driver.findElement(By.xpath(locator));
