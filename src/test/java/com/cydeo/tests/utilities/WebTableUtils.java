@@ -19,6 +19,7 @@ public class WebTableUtils {
     // WePutOurOwnString Custom()->String locator="//td[.='"+customerName+"']/following-sibling::td[3]";
     //FromThe()ArgumentIntoStringLocator--> String locator = "//td[.='"+customerName+"']/following-sibling::td[3]";
     //LocateWebElementIntoCustomerDateCell-->  WebElement customerDateCell = driver.findElement(By.xpath(locator));
+    //WhenYouWorkInaMewMethodYouCanChangeOneProjectNumber goToYour()InsteadofGoTo-->sibling::td[3].GoTo-->sibling::td[4]
 
     public static String returnOrderDate(WebDriver driver, String customerName){
         String locator = "//td[.='"+customerName+"']/following-sibling::td[3]";
