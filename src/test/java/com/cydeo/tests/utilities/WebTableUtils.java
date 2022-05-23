@@ -40,6 +40,12 @@ public class WebTableUtils {
     //This method should accept above-mentioned arguments and internally assert
     //expectedOrderDate matching actualOrderDate.
 
+    //ToDoVerificationWeNeedToPass expectedData-->expectedOrderDataFromBrowserCompare&DoSearch on the first code below
+    //-->public static void orderVerify(WebDriver driver, String customerName, String expectedOrderDate){
+    //My Customer Name Pass HereInsideLocator-->String locator = "//td[.='"+customerName+"']/following-sibling::td[3]";
+    //And store inside webElement--> WebElement customerDateCell = driver.findElement(By.xpath(locator));
+    //IUseGetText CustomerDateCell to getCustomerCell&StoreAsTxt-->String actualOrderDate = customerDateCell.getText();
+    //ThenSayAssertEqualsMyActualOrderDate&MyExpectedOrderDate->Assert.assertEquals(actualOrderDate,expectedOrderDate);
     public static void orderVerify(WebDriver driver, String customerName, String expectedOrderDate){
 
         String locator = "//td[.='"+customerName+"']/following-sibling::td[3]";
