@@ -5,6 +5,9 @@ import org.testng.annotations.Test;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+//ToGetOurPath2OurClassRightClick File->(CONFIGURATION.PROPERTIES) thatYouWantToGetThePathSelect->CopyPath/Reference
+//Then select-->Path from Content Root --> FileInputStream file = new FileInputStream("configuration.properties");
+//
 
 public class ReadingProperties {
 
@@ -17,10 +20,15 @@ public class ReadingProperties {
         FileInputStream file = new FileInputStream("configuration.properties");
 
         //3- Load the properties object using FileInputStream object
+        //IfCompileWhenRight-->properties.load(file); through-->throws IOException toHandle theSuperClass+HandleChild
         properties.load(file);
 
-        //4- Use "properties" object to read value
 
+
+       //TheObjectIsReadsOurDataJustPrintTheValueWeHave-->System.out.println("properties.getProperty(\"browser\") = "
+        //Once you print is just make sure you print the right data-->+ properties.getProperty("browser"));
+
+        //4- Use "properties" object to read value
         System.out.println("properties.getProperty(\"browser\") = "
                 + properties.getProperty("browser"));
         System.out.println("properties.getProperty(\"env\") = "
