@@ -30,6 +30,11 @@ public class ConfigurationReader {
 
     }
 
+    //USE THE() BELOW TO GET ANY PROPERTY AND KEY FROM CONFIGURATION PROPERTIES
+    //Below Simple static method help us to read all the above logic and return us the value
+    //For that we call getProperty & say string keyword--> public static String getProperty(String keyword){
+    //CreateAllLogic NowWeSayReturnMeProperty.GetProperty()keywordReturn value-->return properties.getProperty(keyword);
+
     public static String getProperty(String keyword){
         return properties.getProperty(keyword);
     }
