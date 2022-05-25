@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+//ConfigurationReader we created to b able to read from configuration property
 public class ConfigurationReader {
 
     //1- Create the object of Properties
