@@ -29,13 +29,20 @@ public class T4_Config_Practice {
            //AbyString you can pass from your configuration property On this class we want to go to google type
            //Apply to test my browser from outside my code We Located our search box below!
            //WebElement googleSearchBox = Driver.getDriver().findElement(By.xpath("//input[@name='q']"));
-          //We send Keys Using-->searchValue Configuration Reader on the code below!
-          // googleSearchBox.sendKeys(ConfigurationReader.getProperty("searchValue") + Keys.ENTER);
-          //B4UPassAnyProperty&String AnalyseUrCodeFirst ifMakeSense don't put a string that will damage your code
+           //We send Keys Using-->searchValue Configuration Reader on the code below!
+           // googleSearchBox.sendKeys(ConfigurationReader.getProperty("searchValue") + Keys.ENTER);
+           //B4UPassAnyProperty&String AnalyseUrCodeFirst ifMakeSense don't put a string that will damage your code
+
+           //getDriver get my browserTypeFrom DriverConfigurationProperty. ItWillDetermine whichBrowserSupposeToOpen
+           //Then the Switch goTo UtilityDriverClass & determine which browser return FromVCConfigurationProperty
+           //It WillDetermine myBrowser onTheFirst Line&WillGetMeThePage.
+           // when ever I call driver it will return me the same driver over&over again
+
     @Test
     public void google_search_test(){
-        //Driver.getDriver() --> driver
+        //FirstLineBelow
 
+        //Driver.getDriver() --> driver
         Driver.getDriver().get("https://www.google.com");
 
         //3- Write “apple” in search box
