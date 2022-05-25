@@ -82,4 +82,8 @@ public class Driver {
         return driver;
 
     }
+
+    //driver.quit()-->noSuchSession
+    //driver.close()-->
+    //try to create a () name close driver....
 }
