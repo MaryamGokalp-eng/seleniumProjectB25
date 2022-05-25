@@ -32,7 +32,7 @@ public abstract class TestBase {
 
     //if UHave testThat isDependable toEachOther & TheySuppose toRunInTheSameBrowser ifYou write-->driver.close();
     //After yourTestIsRunning driver close isExecuted & yourBrowserIsClose so and the rest of the testFail coz
-    //They are depends on the first test
+    //They are depends on the first test as developer U mustSelect theBest way & apply whatEverSuit the codeBetter
 
     @AfterMethod
     public void tearDown(){
