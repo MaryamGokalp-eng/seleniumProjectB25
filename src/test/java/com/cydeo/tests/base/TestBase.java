@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
-//The class below we store a lot of reusable when we need we can extend and use them
+//The class below weStoreALot of reusable methods/annotation&objects and variable if we extend then whenWeNeeded
 //MakeSureWhat youAreGoingTo putInsideYourTestBase doubleCheck ifIsGoodFor yourScenario WillBeGoodForEveryThing
 //IsNotMandatory butWeCanMake abstract class asWell from-->public class TetBase to-->public abstract class TetBase
 //Then we can add method below:
