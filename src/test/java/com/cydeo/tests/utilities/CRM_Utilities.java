@@ -4,6 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+/*
+CRM_Utilities is something related to CRM if you have something related to CRM Application we can store here
+
+ */
 public class CRM_Utilities {
 
 
