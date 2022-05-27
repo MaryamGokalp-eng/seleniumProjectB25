@@ -19,7 +19,7 @@ public class JavaFakerPractice {
         System.out.println("faker.name().firstName() = " + faker.name().firstName());
         System.out.println("faker.name().lastName() = " + faker.name().lastName());
 
-        //ExampleIfInYourApplication YouSupposeToEnterFullName CallMethodFullName -->faker.name().fullName()soutV
+        //Exampl eIfInYourApplication YouSupposeToEnterFullName CallMethodFullName -->faker.name().fullName()soutV
         //E depois voce imprime retorna para voce a primeiro e o ultimo nome juntos
         System.out.println("faker.name().fullName() = " + faker.name().fullName());
 
