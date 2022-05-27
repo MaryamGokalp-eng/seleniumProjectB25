@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.util.Properties;
 //ToGetOurPath2OurClassRightClick File->(CONFIGURATION.PROPERTIES) thatYouWantToGetThePathSelect->CopyPath/Reference
 //Then select-->Path from Content Root --> FileInputStream file = new FileInputStream("configuration.properties");
-//
 
 public class ReadingProperties {
 
