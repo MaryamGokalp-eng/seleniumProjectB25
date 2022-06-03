@@ -32,7 +32,7 @@ public class Driver {
 
     public static WebDriver getDriver(){
 
-        if (driver == null) {
+        if (driver == null){
 
             /*
             FIRST APPROACH
