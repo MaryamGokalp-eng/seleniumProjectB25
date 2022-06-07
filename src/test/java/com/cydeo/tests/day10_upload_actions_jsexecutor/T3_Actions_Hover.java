@@ -16,15 +16,20 @@ public class T3_Actions_Hover {
         Driver.getDriver().get("https://practice.cydeo.com/hovers");
 
         //Locate all images under here:
+        //AlwaysPutThe [] to workInBothScenario 2 locate imageOnMyWebDriver-->(//img)[1] -->(//img)[2]-->(//img)[3]
         WebElement img1 = Driver.getDriver().findElement(By.xpath("(//img)[1]"));
         WebElement img2 = Driver.getDriver().findElement(By.xpath("(//img)[2]"));
         WebElement img3 = Driver.getDriver().findElement(By.xpath("(//img)[3]"));
 
         //Locate all the "user" texts under here:
+        //TypeOneMyChromeBrowser & do the same for the other users 2&3--> //h5[text()='name: user1']
+        //Basically weSaying that get me the header that had the text ofThis-->//h5[text()='name: user2']
+        //What u do is locate image and usually inspect for the rest of HTML Images but with differentApproach
         WebElement user1= Driver.getDriver().findElement(By.xpath("//h5[text()='name: user1']"));
         WebElement user2= Driver.getDriver().findElement(By.xpath("//h5[text()='name: user2']"));
         WebElement user3= Driver.getDriver().findElement(By.xpath("//h5[text()='name: user3']"));
 
+        //ToMoveMyMethodFrom My actions class? I had to create-->actions = new Actions(Driver.getDriver());
         Actions actions = new Actions(Driver.getDriver());
 
         //2. Hover over to first image
@@ -35,12 +40,12 @@ public class T3_Actions_Hover {
         //a. “name: user1” is displayed
         Assert.assertTrue(user1.isDisplayed());
 
-        //4. Hover over to second image
+        //4. Hover over to second image instead of image 1 to verify user 2
         BrowserUtils.sleep(2);
         actions.moveToElement(img2).perform();
 
         //5. Assert:
-        //a. “name: user2” is displayed
+        //a. “name: user2” is displayed instead of user one to verify user 2
         Assert.assertTrue(user2.isDisplayed());
 
         //6. Hover over to third image
