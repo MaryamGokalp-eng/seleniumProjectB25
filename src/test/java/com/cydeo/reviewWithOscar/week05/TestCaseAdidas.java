@@ -10,16 +10,21 @@ import org.testng.annotations.Test;
 public class TestCaseAdidas extends TestBase {
 
     @Test
-    public void Test(){
+    public void Test() {
         double expectedPrice = 0;
         driver.get("https://www.demoblaze.com/index.html");
-// ConfigurationReader.getProperty("category1") ----> returns Laptops
-        expectedPrice += ReviewUtils.addProduct(driver, ConfigurationReader.getProperty("category1"),"Sony vaio i5");
-        ReviewUtils.getLink(driver,"Home");
-        expectedPrice += ReviewUtils.addProduct(driver,ConfigurationReader.getProperty("category2"),"Samsung galaxy s6");
+
+        // ConfigurationReader.getProperty("category1") ----> returns Laptops
+        expectedPrice += ReviewUtils.addProduct(driver, ConfigurationReader.getProperty("category1"), "Sony vaio i5");
+        ReviewUtils.getLink(driver, "Home");
+
+        expectedPrice += ReviewUtils.addProduct(driver, ConfigurationReader.getProperty("category2"), "Samsung galaxy s6");
         // go to Cart
-        ReviewUtils.getLink(driver,"Cart");
+
+        ReviewUtils.getLink(driver, "Cart");
+
         ReviewUtils.staticWait(3); // PUT one second waiting time
+
         // First get Cart price then click on place order
         double cartPrice = Double.parseDouble(driver.findElement(By.id("totalp")).getText());
         System.out.println("cartPrice = " + cartPrice);
@@ -50,8 +55,8 @@ public class TestCaseAdidas extends TestBase {
         System.out.println(ID);
         System.out.println("actualPrice = " + actualPrice);
 
-        Assert.assertEquals(actualPrice,expectedPrice);
-        Assert.assertEquals(cartPrice,expectedPrice);
+        Assert.assertEquals(actualPrice, expectedPrice);
+        Assert.assertEquals(cartPrice, expectedPrice);
 
 
     }
