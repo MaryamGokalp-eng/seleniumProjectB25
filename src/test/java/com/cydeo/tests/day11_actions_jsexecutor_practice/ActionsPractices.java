@@ -32,11 +32,14 @@ public class ActionsPractices {
         //5- Scroll back up to “Home” link using PageUP button
         actions.sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
 
-        //Driver.getDriver().quit();
+        //To useDriverQuitSay completely terminateTheProgramme-->Driver.getDriver().quit();
+        //That wayWeCanNotUseDriver COZ TheProgrammeWill be Terminated instead we Create a-->Driver.closeDriver();
+        //WeUseCloseDriverToCompletelyTerminate andCloseBack the session by useDriverQuite&ValueNotEvenGoNull
+        // -->Driver.closeDriver();
         Driver.closeDriver();
 
     }
-
+      // another test
     @Test
     public void test2(){
         Driver.getDriver().get("https://practice.cydeo.com/");
