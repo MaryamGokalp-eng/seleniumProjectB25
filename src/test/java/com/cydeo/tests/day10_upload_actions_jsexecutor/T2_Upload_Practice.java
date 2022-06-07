@@ -14,6 +14,7 @@ public class T2_Upload_Practice {
 
         Driver.getDriver().get("https://practice.cydeo.com/upload");
 
+        //3 STEPS BELOW, 1ST STEP Find File copy as path name
         //2. Find some small file from your computer, and get the path of it.
         //How IstThatWork? MyBrowserDriverIsMyTranslateBetweenMySelenium&MyBrowserCode by ConvertTheFile
         //PathByFindingTheFile&SomeHowTransferIntoMyBrowser
@@ -24,23 +25,23 @@ public class T2_Upload_Practice {
          */
 
         //3. Upload the file.
-        //TheAboveCode we Located TheWedElement&WePassHereOnThe Code below
+        //2rd STEP COPY AS STRING TheAboveCode we Located TheWedElement&WePassHereOnThe Code below
         WebElement fileUpload = Driver.getDriver().findElement(By.id("file-upload"));
-
         BrowserUtils.sleep(2);
-
         fileUpload.sendKeys(path);
 
-        //WeCopyFileSubmit by ClickOnTheUploadButtonOnMyWebDriver&PastInto
+        //WeCopyFileSubmit by ClickOnTheUploadButtonOnMyWebDriver&PastInto & UPLOAD THE BUTTON
         WebElement uploadButton = Driver.getDriver().findElement(By.id("file-submit"));
         uploadButton.click();
 
         //4. Assert:
         //-File uploaded text is displayed on the page
+        //When We run to see if it click and I create a header so I would say
+        //ThisHeader us display-->Assert.assertTrue(fileUploadedHeader.isDisplayed());
         WebElement fileUploadedHeader = Driver.getDriver().findElement(By.tagName("h3"));
         Assert.assertTrue(fileUploadedHeader.isDisplayed());
 
-        //The 3 step we did was find the file upload the text copy as string&upload the button.
+        //Next afterYouClick onThe
 
 
   }
