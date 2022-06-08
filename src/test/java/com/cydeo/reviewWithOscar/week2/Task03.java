@@ -1,7 +1,7 @@
 package com.cydeo.reviewWithOscar.week2;
 
-import com.cydeo.tests.utilities.HandleWait;
-import com.cydeo.tests.utilities.WebDriverFactory;
+import com.cydeo.utilities.HandleWait;
+import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
