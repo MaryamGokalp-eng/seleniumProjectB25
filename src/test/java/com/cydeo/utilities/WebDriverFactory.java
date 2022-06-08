@@ -1,4 +1,4 @@
-package com.cydeo.tests.utilities;
+package com.cydeo.utilities;
 
 //OPEN DIFFERENT BROWSER USING WebDriverFactory
 // TASK: NEW METHOD CREATION

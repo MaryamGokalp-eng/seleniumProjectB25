@@ -1,5 +1,6 @@
-package com.cydeo.tests.utilities;
+package com.cydeo.utilities;
 
+import com.cydeo.utilities.Driver;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
