@@ -1,4 +1,4 @@
-package com.cydeo.tests.day3_CssSellector_xpath;
+package com.cydeo.tests.tests.tests.day3_CssSellector_xpath;
 
 public class T5 {
 
