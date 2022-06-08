@@ -1,7 +1,7 @@
 package com.cydeo.reviewWithOscar.week03;
 
-import com.cydeo.tests.utilities.BrowserUtils;
-import com.cydeo.tests.utilities.WebDriverFactory;
+import com.cydeo.utilities.BrowserUtils;
+import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
