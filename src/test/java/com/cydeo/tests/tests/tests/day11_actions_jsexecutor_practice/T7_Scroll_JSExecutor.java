@@ -1,7 +1,7 @@
-package com.cydeo.tests.day11_actions_jsexecutor_practice;
+package com.cydeo.tests.tests.tests.day11_actions_jsexecutor_practice;
 
-import com.cydeo.tests.utilities.BrowserUtils;
-import com.cydeo.tests.utilities.Driver;
+import com.cydeo.utilities.BrowserUtils;
+import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
