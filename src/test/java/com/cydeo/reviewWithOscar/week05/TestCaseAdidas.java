@@ -1,8 +1,8 @@
 package com.cydeo.reviewWithOscar.week05;
 
 import com.cydeo.tests.base.TestBase;
-import com.cydeo.tests.utilities.ConfigurationReader;
-import com.cydeo.tests.utilities.ReviewUtils;
+import com.cydeo.utilities.ConfigurationReader;
+import com.cydeo.utilities.ReviewUtils;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
