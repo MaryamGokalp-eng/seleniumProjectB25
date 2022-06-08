@@ -1,6 +1,6 @@
-package com.cydeo.tests.day5_testing_Intro_dropdowns;
+package com.cydeo.tests.tests.tests.day5_testing_Intro_dropdowns;
 
-import com.cydeo.tests.utilities.WebDriverFactory;
+import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
