@@ -1,7 +1,7 @@
-package com.cydeo.tests.day8_Properties_config_reader;
+package com.cydeo.tests.tests.tests.day8_Properties_config_reader;
 
-import com.cydeo.tests.utilities.WebDriverFactory;
-import com.cydeo.tests.utilities.WebTableUtils;
+import com.cydeo.utilities.WebDriverFactory;
+import com.cydeo.utilities.WebTableUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

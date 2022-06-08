@@ -1,4 +1,4 @@
-package com.cydeo.tests.day8_Properties_config_reader;
+package com.cydeo.tests.tests.tests.day8_Properties_config_reader;
 
 import org.testng.annotations.Test;
 

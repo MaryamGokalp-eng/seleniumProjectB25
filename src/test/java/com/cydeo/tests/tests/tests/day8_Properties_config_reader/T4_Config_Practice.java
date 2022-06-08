@@ -1,8 +1,8 @@
-package com.cydeo.tests.day8_Properties_config_reader;
+package com.cydeo.tests.tests.tests.day8_Properties_config_reader;
 
 
-import com.cydeo.tests.utilities.ConfigurationReader;
-import com.cydeo.tests.utilities.Driver;
+import com.cydeo.utilities.ConfigurationReader;
+import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
