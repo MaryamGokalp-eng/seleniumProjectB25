@@ -1,6 +1,6 @@
 package com.cydeo.reviewWithOscar.avengerHours;
 
-import com.cydeo.tests.utilities.Driver;
+import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
