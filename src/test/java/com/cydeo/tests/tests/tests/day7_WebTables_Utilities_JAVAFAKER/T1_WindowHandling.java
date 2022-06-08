@@ -1,7 +1,7 @@
-package com.cydeo.tests.day7_WebTables_Utilities_JAVAFAKER;
+package com.cydeo.tests.tests.tests.day7_WebTables_Utilities_JAVAFAKER;
 
-import com.cydeo.tests.utilities.BrowserUtils;
-import com.cydeo.tests.utilities.WebDriverFactory;
+import com.cydeo.utilities.BrowserUtils;
+import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;

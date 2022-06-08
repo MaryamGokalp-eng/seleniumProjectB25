@@ -1,8 +1,8 @@
-package com.cydeo.tests.day7_WebTables_Utilities_JAVAFAKER;
+package com.cydeo.tests.tests.tests.day7_WebTables_Utilities_JAVAFAKER;
 
 import com.cydeo.tests.base.TestBase;
-import com.cydeo.tests.utilities.BrowserUtils;
-import com.cydeo.tests.utilities.CRM_Utilities;
+import com.cydeo.utilities.BrowserUtils;
+import com.cydeo.utilities.CRM_Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;

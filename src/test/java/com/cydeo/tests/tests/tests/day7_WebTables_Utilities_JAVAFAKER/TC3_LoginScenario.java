@@ -1,4 +1,4 @@
-package com.cydeo.tests.day7_WebTables_Utilities_JAVAFAKER;
+package com.cydeo.tests.tests.tests.day7_WebTables_Utilities_JAVAFAKER;
 
 public class TC3_LoginScenario {
 
