@@ -41,5 +41,7 @@ public class LibraryLoginPage {
     public WebElement wrongEmailOrPasswordErrorMessage;
 
 
-
 }
+
+//As developer whenIAmCreatingThiIUseTheTstAsWebElement-->Please enter a valid email address.
+//IfIsIncorrectMyLocatorNotEvenWork it willFail-->'Sorry, Wrong Email or Password']
