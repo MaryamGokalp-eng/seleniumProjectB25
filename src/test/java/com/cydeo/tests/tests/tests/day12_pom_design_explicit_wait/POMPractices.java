@@ -8,12 +8,24 @@ import org.testng.annotations.Test;
 
 public class POMPractices {
 
+    //CreateObjectOnClassLevel
     LibraryLoginPage libraryLoginPage;
 
     @BeforeMethod
     public void setupMethod(){
         Driver.getDriver().get("https://library1.cydeo.com/");
-        libraryLoginPage = new LibraryLoginPage();
+        libraryLoginPage = new LibraryLoginPage();                //<--instantiateMyObjectB4EveryTestOnceTerminate
+
+        //MyDriveSingletonWillGenerateAnotherSession to beAbleToContinueWithTheExecution&WillPassIntoTheNewObject
+        //regardless which package I am calling willBeMovingAround IsThat's whyWe create an Object before each test
+     //SoLibraryLoginPageITestPackage-->(Driver.getDriver<--MustPassThisSessionInsideThisNewObject-->libraryLoginPage
+      //SoOnLibraryLoginPage-->This<-KeywordRep[resentsClassElements SoISayGetMe
+        //TheCurrentDriverSession-->(Driver.getDriver() &PassIntoThisObject-->this);
+        //Then ThisObjectCanExecutingMySeleniumCodeCOZThisObjectCaringMySessionID-->this);
+        //WhenWeUseCloseDriverObjectIsKillingMySessionIDThenWeHaveToCallTheLineBelowOneMoreTime
+        //PageFactory.initElements(Driver.getDriver(), this); COZ This line isTerminate & Re Executed Again
+        //ToCallTheLineIUse-->   libraryLoginPage = new LibraryLoginPage();
+
     }
 
     @Test
@@ -79,3 +91,6 @@ public class POMPractices {
 
 //ThenIHave toCallMyClassObject POMPractice ObjectClass isLibraryLogin Package Pages to initiate the class instance toRefresh&Locate
 //The WebElement Reference form.
+
+//SoInsteadOfCreate ObjectOneTime ICreateObject inTheClassLevel-->LibraryLoginPage libraryLoginPage
+//&I
