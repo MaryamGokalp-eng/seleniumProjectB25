@@ -16,8 +16,12 @@ public class LibraryLoginPage {
     }
 
 
-    //#2- use @FindBy annotation to locate web elements
 
+    //DisadvantageOfDataObjet model? Say initially itTake a littleBitLongerToCreate thePageRepositories toBut
+    // ImmediateWeCanConvertInto AdvantageIsGoingToBeOneTimeEffect and inThe LongRunIsGoingToSaveALotOfTime CompareTo
+    //WhereWeRundleLocateWebElementInDifferentTest
+
+    //#2- use @FindBy annotation to locate web elements
     @FindBy(xpath = "//input[@id='inputEmail']")
     public WebElement inputUsername;
 
