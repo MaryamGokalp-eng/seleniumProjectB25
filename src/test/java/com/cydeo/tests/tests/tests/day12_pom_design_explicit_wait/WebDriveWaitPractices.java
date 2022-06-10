@@ -12,18 +12,20 @@ public class WebDriveWaitPractices {
 
     @Test
     public void dynamic_load_7_test(){
-        //1. Go to https://practice.cydeo.com/dynamic_loading/7
+        //1. Go to ThisPage https://practice.cydeo.com/dynamic_loading/7
         Driver.getDriver().get("https://practice.cydeo.com/dynamic_loading/7");
 
-        //2. Wait until title is “Dynamic title”
-
-        //creating the wait object to be able to create certain condition to wait
+        //2. Wait until title is “Dynamic title” ToCreate WebDriver Object & Assigning 10sec
+        //creating the wait object to be able to create certain condition to wait until title is dynamicTitle
+        //ToReade forCertainCondition Use-->WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
-        //use the "wait" object to create our expected condition
+        //use the "wait" object to create our expected condition is to-->"Dynamic title")
+        //UseThe WebDriver Object&IWantTimeToSetUp For10Sec theIdeaIsToSaveTime&makeOurCode ToWaitLess
         wait.until(ExpectedConditions.titleIs("Dynamic title"));
 
         //Create object of DynamicLoad7Page to reach and assert web elements
+        //Then I am calling my objectSoThat I amAbleToReachAll myWebElement
         DynamicLoad7Page dynamicLoad7Page = new DynamicLoad7Page();
 
         //3. Assert: Message “Done” is displayed.
@@ -31,11 +33,11 @@ public class WebDriveWaitPractices {
 
         //4. Assert: Image is displayed
         Assert.assertTrue(dynamicLoad7Page.spongeBobImage.isDisplayed());
-
     }
 
     @Test
     public void dynamic_load_1_test(){
+        //Task5 practice
         //1. Go to https://practice.cydeo.com/dynamic_loading/1
         Driver.getDriver().get("https://practice.cydeo.com/dynamic_loading/1");
 
