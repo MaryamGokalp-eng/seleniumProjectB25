@@ -9,7 +9,7 @@ public class DynamicLoad7Page {
 
     //#1-Create constructor and instantiate driver and object of the class
 
-    public DynamicLoad7Page(){
+    public DynamicLoad7Page(){                                         //CodeBelow isTheFirstStepThatINeedToDo
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
