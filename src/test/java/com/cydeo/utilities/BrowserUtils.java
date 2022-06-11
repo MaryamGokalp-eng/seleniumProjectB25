@@ -1,6 +1,6 @@
 package com.cydeo.utilities;
 
-  /*
+/*
    In this class only general utility methods that are not related to some specific page
    If you need it you call it.
    */
@@ -86,7 +86,6 @@ public class BrowserUtils {
 
     /*
     This method accepts a String "expectedTitle" and Asserts if it is true
-
      To get the title we could say
      Assert.assertEquals(driver.getTitle(), expectedTitle);
      */
@@ -108,3 +107,4 @@ public class BrowserUtils {
 
 
 }
+
