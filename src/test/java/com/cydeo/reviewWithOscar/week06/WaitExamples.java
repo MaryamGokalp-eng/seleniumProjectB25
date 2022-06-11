@@ -55,7 +55,7 @@ public class WaitExamples {
         page.enable.click();
 
         wait.until(ExpectedConditions.elementToBeClickable(page.disable));
-        Assert.assertTrue(page.disable.isEnable),"Button has NOT been enabled YET!");
+        Assert.assertTrue(page.disable.isEnabled,"Button has NOT been enabled YET!");
 
         /*
         TimeoutException: Expected condition failed: waiting for element to be clickable:
