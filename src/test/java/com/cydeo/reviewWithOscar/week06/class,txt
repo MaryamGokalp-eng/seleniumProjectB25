@@ -1,0 +1,43 @@
+package com.cydeo.reviewWithOscar.week06;
+
+Today's Topics:
+        * POM: Page Object Model
+        - Java Classes for each page of the application
+        - For : https://www.automationexercise.com/
+        1. Create BasePage POM which is abstarct- other pages will inherit constructor of this class
+    * Synchronization in Selenium
+            Go to : https://chercher.tech/practice/explicit-wait-sample-selenium-webdriver
+
+            * JavascriptExecuter and Actions Interfaces in Selenium
+            * File Uploading
+            * Scrolling with different ways
+            - Actions inteface : SendKeys Keys.PAGE UP or DOWN
+            : moveToElement method to scroll into that view
+            - JS Executer : we send String arguments
+            - scroll using JavaScriptExecutor: js.executeScript("window.scrollBy(0, 750)");
+            - js.executeScript("arguments[0].scrollIntoView(true)", webElement);
+
+            Task 6 :
+            1. Launch browser
+            2. Navigate to url 'http://automationexercise.com'
+            3. Click on 'Contact Us' button
+            -- Extra step move the view to Submit Button
+            4. Enter name, email, subject and message
+            5. Upload file
+            6. Click 'Submit' button
+            7. Click OK button
+            8. Verify success message 'Success! Your details have been submitted successfully.' is visible
+            9. Click 'Home' button and verify that landed to home page successfully
+
+            PIQ: What is the difference between Implicit wait and explicit wait?
+            -> Implicit wait time is set once globally and applies to all steps.
+            -> Explicit wait is applied to a specific element on the page
+
+            -> Implicit wait works with findElement method and waits until element is present in html/dom (document object model)
+            -> Explicit wait can be applied with different conditions that are available in ExpectedConditions class
+
+-> Implicit wait stops waiting as soon as element is found in the html/dom
+        -> Explicit wait stops waiting when certain condition is met. like visibility of elem. or enable of elem etc
+
+        -> Implicit wait throws NoSuchElementException if element does not appear in html/dom during the timeout
+        -> Explicit wait throws TimeOutException if condition is not met within the specified seconds
