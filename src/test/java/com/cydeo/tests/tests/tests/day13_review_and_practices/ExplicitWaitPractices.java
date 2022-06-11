@@ -28,19 +28,24 @@ public class ExplicitWaitPractices {
         dynamicControlsPage.removeButton.click();
 
         //4- Wait until “loading bar disappears”
-//        Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-//        wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loadingBar));
+        //  Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        //LINE BELOW TO REMEMBER WEB DRIVER WAIT
+        //CreateObject-->WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        //CreateExpectedCondition-->wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loadingBar));
 
+        //LineBelow Create for the Utility method
         BrowserUtils.waitForInvisibilityOf(dynamicControlsPage.loadingBar);
 
-        //5- Verify:
-        //a. Checkbox is not displayed
 
+        //5- Verify:
+        //a. Checkbox is not displayed is going to through no such element exception
+        //ToInspectAnExceptionWeCanSayTryThisLineBelow and CatchMe-->}catch (NoSuchElementException n){
+        //ToVerifyIfCatchMyExceptionICanSay--> Assert.assertTrue(true);
+        //Assert.assertTrue(!dynamicControlsPage.checkbox.isDisplayed());  //<--HereIReverseTheValue
         try {
             //assertFalse method will pass the test if the boolean value returned is: false
             Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-            Assert.assertTrue(!dynamicControlsPage.checkbox.isDisplayed());
+            Assert.assertTrue(!dynamicControlsPage.checkbox.isDisplayed());      //HereIReverseTheValue
             Assert.assertFalse(dynamicControlsPage.checkbox.isDisplayed());
         }catch (NoSuchElementException n){
             Assert.assertTrue(true);
@@ -51,6 +56,7 @@ public class ExplicitWaitPractices {
         Assert.assertTrue(dynamicControlsPage.message.getText().equals("It's gone!"));
     }
 
+    //AnotherClass Below
     @Test
     public void enable_button_test(){
         //3- Click to “Enable” button
