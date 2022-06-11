@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Task06 {
+public class Task06_ScrollingWays {
 
 
     @Test
